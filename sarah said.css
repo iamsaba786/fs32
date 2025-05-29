@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #8d9fa9;
+}
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 350px;
+  padding: 25px;
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.363);
+  background-color: #fff;
+}
+#header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+#header h1 {
+  font-size: 15px;
+  font-weight: 350px;
+}
+#header h3 {
+  font-weight: 80px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+#saying {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 25px 0 0 0;
+}
+#saying h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+#saying h1:nth-child(2) {
+  opacity: 0.4;
+}
+#saying #typer {
+  width: 3px;
+  height: 45px;
+  background-color: orangered;
+}
+#people {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#text h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+#faces {
+  display: flex;
+}
+#face1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  margin-right: -30px;
+  position: relative;
+  z-index: 2;
+  background-image: url(https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlvbnxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#face2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  background-color: rgb(4, 4, 4);
+}
+#face2 i {
+  font-size: 35px;
+  color: #fff;
+}
