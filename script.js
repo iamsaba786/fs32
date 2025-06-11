@@ -1,15 +1,20 @@
-// object
-// what is object ?
-// how to create obj
-// how to access obj value.
-// what is dom ?
-let arr = [];
-for (let i = 1; i < 6; i++) {
-  a = prompt("enter number");
-  a = Number(a.trim());
-  arr.push(a);
-}
-console.log(arr);
-//how to i host / deploye my projects.
-//github par. youtube
-//trainning llm models
+//let arr = ["saba", "harsh", "anam"];
+//let a = ["Saba", "Harsh", "Anam"];
+
+//let f = arr.map(function (val) {
+//return val.substring(0, 1).toUpperCase();
+//+val.substring(1);
+//});
+
+// Trea ai
+
+const arr = [
+  { name: "fridge", price: 4999 },
+  { name: "Ac", price: 6999 },
+  { name: "Cooler", price: 3999 },
+  { name: "Fan", price: 1999 },
+];
+let newval = arr.map(function (val) {
+  return { ...val, price: Math.round(val.price + val.price * 0.18) };
+});
+//google stitch
